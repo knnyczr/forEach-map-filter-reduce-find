@@ -78,6 +78,8 @@ console.log(filtered)
 ["Carlos", "Dmitriy", "Alberto", "Magnardo"]
 
 ```
+## [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
 
 
 ## [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
