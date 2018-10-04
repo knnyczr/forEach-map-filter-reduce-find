@@ -42,3 +42,59 @@ arr.forEach((d, i, a) => {
 => "this is e, this is the index 4, this is the array being traversed: a,b,c,d,e"
 
 ```
+
+##[.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+Use the `.map()` method on any array, it will return a new array with new mutated values. 
+
+```javascript
+
+let arr = [1, 2, 3, 4, 5]
+
+const mapped = arr.map( d => d * 2 ); 
+
+console.log(mapped)
+
+//expected output:
+
+=> [2, 4, 6, 8, 10]
+
+```
+
+## [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+This method creates a new array with all the elements that pass the test implemented by the function... or it FILTERS everything you're not looking for. 
+
+```javascript
+
+let names = ["Carlos", "Dmitriy", "Angel", "Ester", "Alberto", "Magnardo"]
+
+const filtered = names.filter( name => name.length > 5); 
+
+console.log(filtered)
+
+//expected output: 
+
+["Carlos", "Dmitriy", "Alberto", "Magnardo"]
+
+```
+
+
+## [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
+Use the `.find()` method on any array and it returns the **value** of the **first element** in the arrat that satisfies the callback function, otherwise `undefined` is returned. Just like the .forEach() method, the callback function also can take three arguments. 
+
+```javascript
+
+const arr = [5, 6, 30, 35, 90, 130,  9]; 
+
+let found = arr.find((d) => {
+    return d > 30; 
+});
+
+console.log(found); 
+
+//expected output
+=> 35
+
+```
