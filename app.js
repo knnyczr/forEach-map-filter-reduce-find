@@ -15,13 +15,13 @@ const posts = [
 
 //  1. Using the for ... of loop
 
-const mainbox = document.getElementById('main'); 
+// const mainbox = document.getElementById('main'); 
 
- for (const item of posts) {
-     const newPost = document.createElement('p'); 
-     newPost.textContent = item; 
-     mainbox.appendChild(newPost)
- }
+//  for (const item of posts) {
+//      const newPost = document.createElement('p'); 
+//      newPost.textContent = item; 
+//      mainbox.appendChild(newPost)
+//  }
 
 //  2. Using the .forEach() method display the posts
 
