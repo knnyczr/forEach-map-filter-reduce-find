@@ -79,7 +79,18 @@ console.log(filtered)
 
 ```
 ## [.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+The `reduce()` method executes a reducer function (that you provide) on each memeber of the array against an accumulator and each element in the array (from left to right) to be *REDUCED* to a single value
 
+```javascript
+let arr = [1, 2, 3, 4, 5, 6, 7]; 
+let reducer = (accumulator, value) => {
+    return accumulator + value; 
+}
+let newArr = arr.reduce(reducer)
+
+//expected output
+=> 28
+```
 
 
 ## [.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
